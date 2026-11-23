@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="es-CR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Hielera · Carne a domicilio en Escazú y Santa Ana</title>
+<meta name="description" content="Carne de res, cerdo, pollo, embutidos y mariscos al vacío, en porciones de ½ y 1 kg, entregados en tu casa en Escazú y Santa Ana. Pedí por WhatsApp.">
+<meta property="og:title" content="La Hielera · Carne a domicilio">
+<meta property="og:description" content="Porciones al vacío de ½ y 1 kg, entregadas en tu casa en Escazú y Santa Ana. Sin pedido mínimo.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='3' y='9' width='26' height='18' rx='4' fill='%236B1D1F'/><rect x='6' y='5' width='20' height='6' rx='2' fill='%23C9892B'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--vino:#6B1D1F;--vino-2:#55161a;--crema:#EADFC9;--crema-2:#f5efe3;--cafe:#231B16;--dorado:#C9892B;--muted:#6b5d52;--line:#d8cab0;--wa:#1f9e55;--r:14px;--title:'Alfa Slab One',Georgia,serif;--font:'Barlow Condensed','Arial Narrow',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-size:19px;color:var(--cafe);background:var(--crema-2);line-height:1.4}
+h1,h2,h3{font-family:var(--title);font-weight:400;margin:0 0 .4em;line-height:1.05;letter-spacing:.01em}
+p{margin:0 0 1em}
+a{color:inherit}
+.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+.muted{color:var(--muted)}
+.topbar{background:var(--cafe);color:var(--crema);text-align:center;font-size:.95rem;padding:8px 16px;letter-spacing:.03em}
+.topbar b{color:var(--dorado)}
+header.hero{background:var(--vino);color:var(--crema);padding:56px 0 64px;position:relative;overflow:hidden}
+header.hero::after{content:'';position:absolute;inset:auto 0 0;height:10px;background:repeating-linear-gradient(90deg,var(--dorado) 0 22px,var(--vino) 22px 30px)}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.brand svg{width:44px;height:44px}
+.brand span{font-family:var(--title);font-size:1.5rem;letter-spacing:.02em}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem);color:#fff}
+.hero h1 em{font-style:normal;color:var(--dorado)}
+.hero .lead{font-size:clamp(1.2rem,2.4vw,1.5rem);max-width:640px;color:var(--crema)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 26px;font:600 1.15rem var(--font);letter-spacing:.03em;text-decoration:none;cursor:pointer;text-transform:uppercase}
+.btn-gold{background:var(--dorado);color:var(--cafe)}
+.btn-gold:hover{background:#d99a3a}
+.btn-line{background:transparent;color:var(--crema);box-shadow:inset 0 0 0 2px var(--crema)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#1a8a4a}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:-30px;position:relative;z-index:2}
+.fact{background:#fff;border:2px solid var(--cafe);border-radius:var(--r);padding:16px 18px;box-shadow:4px 4px 0 var(--cafe)}
+.fact b{display:block;font-size:1.25rem;color:var(--vino)}
+.fact span{color:var(--muted);font-size:1rem}
+section{padding:64px 0}
+.sec-title{text-align:center;margin-bottom:30px}
+.sec-title h2{font-size:clamp(2rem,4.5vw,3rem);color:var(--vino)}
+.combo{display:grid;grid-template-columns:1.3fr 1fr;gap:0;background:var(--cafe);color:var(--crema);border-radius:20px;overflow:hidden}
+.combo-body{padding:34px}
+.combo .tag{display:inline-block;background:var(--dorado);color:var(--cafe);font-weight:700;padding:3px 12px;border-radius:999px;font-size:.95rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:14px}
+.combo h3{font-size:clamp(1.8rem,4vw,2.6rem);color:#fff}
+.combo ul{padding-left:20px;margin:0 0 20px}
+.combo-price{display:grid;place-items:center;background:var(--vino);padding:30px;text-align:center}
+.combo-price b{font-family:var(--title);font-size:clamp(2.6rem,6vw,3.6rem);color:var(--dorado);display:block}
+.tools{position:sticky;top:0;z-index:15;background:var(--crema-2);padding:12px 0;border-bottom:1px solid var(--line)}
+.search{width:100%;padding:12px 16px;border:2px solid var(--cafe);border-radius:999px;font:500 1.1rem var(--font);background:#fff;margin-bottom:10px}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:2px solid var(--cafe);background:#fff;color:var(--cafe);border-radius:999px;padding:6px 16px;font:600 1.05rem var(--font);cursor:pointer;white-space:nowrap}
+.tab[aria-pressed=true]{background:var(--cafe);color:var(--crema)}
+.cat-h{font-size:1.6rem;color:var(--vino);margin:34px 0 12px;padding-bottom:6px;border-bottom:3px solid var(--dorado)}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px}
+.item{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.item-name{font-weight:700;font-size:1.2rem;line-height:1.15}
+.item-note{font-size:.92rem;color:var(--muted)}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opt{flex:1;min-width:130px;display:flex;align-items:center;justify-content:space-between;gap:6px;background:var(--crema-2);border-radius:10px;padding:6px 6px 6px 10px}
+.opt-l{font-size:.95rem;line-height:1.1}
+.opt-l b{display:block;font-size:1.1rem}
+.qty{display:flex;align-items:center;gap:4px}
+.qty button{width:32px;height:32px;border-radius:50%;border:0;background:var(--vino);color:#fff;font:700 1.2rem var(--font);cursor:pointer;line-height:1}
+.qty button.minus{background:#fff;color:var(--vino);box-shadow:inset 0 0 0 2px var(--vino)}
+.qty output{min-width:20px;text-align:center;font-weight:700}
+.empty{text-align:center;color:var(--muted);padding:30px 0}
+.note{font-size:.98rem;color:var(--muted);text-align:center;margin-top:24px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;counter-reset:s}
+.step{background:#fff;border-radius:var(--r);padding:22px;border-top:6px solid var(--vino)}
+.step::before{counter-increment:s;content:counter(s);font-family:var(--title);font-size:2rem;color:var(--dorado);display:block;line-height:1;margin-bottom:8px}
+.step h3{font-size:1.25rem}
+.step p{margin:0;color:var(--muted)}
+.quality{background:var(--crema)}
+.q-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.q{display:flex;gap:12px;align-items:flex-start}
+.q svg{flex:none;width:34px;height:34px;fill:none;stroke:var(--vino);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.q b{display:block;font-size:1.2rem}
+.q span{color:var(--muted)}
+.faq{max-width:780px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:700;font-size:1.2rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:'+';color:var(--vino);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:'–'}
+details p{margin:8px 0 0;color:var(--muted)}
+.contact{background:var(--vino);color:var(--crema);text-align:center}
+.contact h2{color:#fff}
+footer{background:var(--cafe);color:#bfae98;font-size:.95rem;padding:24px 0 110px;text-align:center}
+.cartbar{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:40;width:min(560px,100% - 24px);background:var(--cafe);color:var(--crema);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.35);padding:12px 12px 12px 18px;display:flex;align-items:center;gap:12px}
+.cartbar[hidden]{display:none}
+.cartbar .sum{flex:1;line-height:1.15}
+.cartbar .sum b{font-size:1.3rem;color:#fff}
+.cartbar .sum small{display:block;color:#bfae98;font-size:.9rem}
+.cartbar .btn{padding:10px 18px;font-size:1rem}
+.drawer{position:fixed;inset:0;z-index:50;background:rgba(35,27,22,.55);display:flex;align-items:flex-end;justify-content:center}
+.drawer[hidden]{display:none}
+.sheet{background:var(--crema-2);width:min(600px,100%);max-height:88vh;overflow:auto;border-radius:20px 20px 0 0;padding:22px}
+.sheet h3{font-size:1.6rem;color:var(--vino);display:flex;justify-content:space-between;align-items:center}
+.sheet .x{border:0;background:none;font-size:1.8rem;cursor:pointer;color:var(--cafe)}
+.line{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.line .rm{border:0;background:none;color:var(--vino);cursor:pointer;font:600 .95rem var(--font);text-decoration:underline}
+.tot{display:flex;justify-content:space-between;font-size:1.3rem;font-weight:700;margin:14px 0 4px}
+.field{display:block;margin:12px 0}
+.field span{display:block;font-weight:600;margin-bottom:4px}
+.field input,.field select{width:100%;padding:10px 12px;border:2px solid var(--line);border-radius:10px;font:500 1.1rem var(--font);background:#fff}
+.sheet .btn-wa{width:100%;margin-top:10px}
+@media (max-width:700px){.combo{grid-template-columns:1fr}.combo-body{padding:24px}section{padding:48px 0}.list{grid-template-columns:1fr}body{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="topbar">Pedidos hasta el <b>martes 6 p. m.</b> · Entrega jueves en la noche o viernes</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="14" width="40" height="28" rx="6" fill="#EADFC9"/><rect x="9" y="7" width="30" height="10" rx="3" fill="#C9892B"/><rect x="4" y="22" width="40" height="4" fill="#6B1D1F" opacity=".35"/></svg>
+      <span>La Hielera</span>
+    </div>
+    <h1>La carne,<br><em>directo a tu casa.</em></h1>
+    <p class="lead">Res, cerdo, pollo, embutidos y mariscos, congelados y al vacío en porciones de ½ y 1 kg. Te lo llevamos en hielera a Escazú y Santa Ana.</p>
+    <div class="hero-cta">
+      <a href="#catalogo" class="btn btn-gold">Ver precios</a>
+      <a href="#" class="btn btn-line wa-general" target="_blank" rel="noopener">Escribinos</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap facts">
+  <div class="fact"><b>Sin pedido mínimo</b><span>Pedí lo que necesités</span></div>
+  <div class="fact"><b>Envío gratis en Escazú</b><span>En compras desde ₡15.000. Si no, ₡1.500</span></div>
+  <div class="fact"><b>Porciones de ½ y 1 kg</b><span>Congeladas y empacadas al vacío</span></div>
+  <div class="fact"><b>Pagá por SINPE Móvil</b><span>Al confirmar tu pedido</span></div>
+</div>
+
+<section id="combo">
+  <div class="wrap">
+    <div class="combo">
+      <div class="combo-body">
+        <span class="tag">Combo de la semana</span>
+        <h3>Combo desayuno</h3>
+        <ul>
+          <li>½ kg de tocineta ahumada</li>
+          <li>½ kg de salchicha de desayuno</li>
+          <li>1 kg de hash browns</li>
+        </ul>
+        <button class="btn btn-gold" id="addCombo">Agregar al pedido</button>
+      </div>
+      <div class="combo-price"><div><b>₡11.200</b>todo el combo</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="catalogo" style="padding-top:0">
+  <div class="wrap sec-title"><h2>Lista de precios</h2><p class="muted">Precios con IVA incluido. Tocá + para armar tu pedido.</p></div>
+  <div class="tools">
+    <div class="wrap">
+      <input class="search" id="search" type="search" placeholder="Buscar un corte… (ej. lomito, costilla, chorizo)" aria-label="Buscar producto">
+      <div class="tabs" id="tabs" role="toolbar" aria-label="Categorías"></div>
+    </div>
+  </div>
+  <div class="wrap" id="catalog"></div>
+  <p class="wrap note">Los precios pueden cambiar según el precio de la planta. Las piezas enteras se cobran por peso real. ¿Tenés negocio (soda, restaurante, catering)? Pedinos la lista para negocios.</p>
+</section>
+
+<section id="como" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-title"><h2>Cómo pedir</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Armá tu pedido</h3><p>Elegí aquí lo que querés y mandalo por WhatsApp, o escribinos al 8493-8691.</p></div>
+      <div class="step"><h3>Antes del martes 6 p. m.</h3><p>Es el cierre de pedidos de la semana. Te confirmamos el total.</p></div>
+      <div class="step"><h3>Pagá por SINPE</h3><p>Al confirmar el pedido. Así pedimos solo lo vendido y te damos precio de planta.</p></div>
+      <div class="step"><h3>Recibilo en tu casa</h3><p>Jueves en la noche o viernes, en hielera y con tu nombre en cada bolsa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quality">
+  <div class="wrap">
+    <div class="sec-title"><h2>Por qué La Hielera</h2></div>
+    <div class="q-grid">
+      <div class="q"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span><b>Carne nacional</b>De una planta procesadora en Cañas, Guanacaste, con cadena de frío de principio a fin.</span></div>
+      <div class="q"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 9h16M9 4v16"/></svg><span><b>Al vacío y porcionada</b>Llega congelada en porciones prácticas de ½ y 1 kg.</span></div>
+      <div class="q"><svg viewBox="0 0 24 24"><path d="M12 2v20M5 7l7 5 7-5M5 17l7-5 7 5"/></svg><span><b>Sin inyectar ni tenderizar</b>El pollo no viene inyectado y la carne no viene tenderizada.</span></div>
+      <div class="q"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg><span><b>Garantía de reposición</b>Si algo viene con defecto, reportalo el mismo día con foto de la etiqueta y te lo reponemos.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas">
+  <div class="wrap faq">
+    <div class="sec-title"><h2>Preguntas frecuentes</h2></div>
+    <details><summary>¿Cuál es el pedido mínimo?</summary><p>No hay mínimo. El envío es gratis en Escazú desde ₡15.000; si no, cuesta ₡1.500. Para Santa Ana te confirmamos el envío por WhatsApp.</p></details>
+    <details><summary>¿De dónde viene la carne?</summary><p>De una planta procesadora nacional en Cañas, Guanacaste.</p></details>
+    <details><summary>¿Cómo viene empacada?</summary><p>Congelada, al vacío, en porciones de ½ y 1 kg. Algunos cortes vienen en pieza entera y se cobran por peso real.</p></details>
+    <details><summary>¿Qué porcentaje tiene la molida?</summary><p>La premium es 95/5 y la de primera es 90/10. No tenemos molida Angus.</p></details>
+    <details><summary>¿El lomito viene entero?</summary><p>Sí, en pieza entera de 1 a 1,5 kg aproximadamente, al vacío. El lomo entero solo viene en pieza de 5 a 6 kg; si querés una pieza más pequeña, la opción es la cola de lomo.</p></details>
+    <details><summary>¿El pollo viene inyectado o la carne tenderizada?</summary><p>No.</p></details>
+    <details><summary>¿Por qué se paga antes?</summary><p>Pedimos a la planta solo lo vendido. Pagar al confirmar es lo que nos permite darte precio de planta.</p></details>
+    <details><summary>¿Me sale igual que en el súper?</summary><p>No tenés que ir: te lo dejamos en la casa. Y en muchos cortes, como bistec y cerdo, sale igual o más barato.</p></details>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <h2>¿Dudas? Escribinos.</h2>
+    <p>WhatsApp 8493-8691 · Entregamos en Escazú y Santa Ana</p>
+    <a href="#" class="btn btn-gold wa-general" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> La Hielera · Carne a domicilio en Escazú y Santa Ana, Costa Rica</footer>
+
+<div class="cartbar" id="cartbar" hidden>
+  <div class="sum"><b id="cartTotal">₡0</b><small id="cartCount">0 productos</small></div>
+  <button class="btn btn-gold" id="openCart">Ver pedido</button>
+</div>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <h3 id="sheetTitle">Tu pedido <button class="x" id="closeCart" aria-label="Cerrar">×</button></h3>
+    <div id="lines"></div>
+    <div class="tot"><span>Subtotal</span><span id="subtotal">₡0</span></div>
+    <p class="muted" id="shipNote" style="font-size:1rem"></p>
+    <label class="field"><span>Tu nombre</span><input id="cName" autocomplete="name"></label>
+    <label class="field"><span>Zona de entrega</span>
+      <select id="cZone"><option>Escazú</option><option>Santa Ana</option><option>Otra zona (consultar)</option></select>
+    </label>
+    <a class="btn btn-wa" id="sendOrder" href="#" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+    <p class="muted" style="font-size:.95rem;margin-top:10px">Te confirmamos el total por WhatsApp. Las piezas enteras se ajustan al peso real.</p>
+  </div>
+</div>
+
+<script>
+// ===== Datos editables =====
+const WHATSAPP = '50684938691';
+const FREE_SHIP = 15000, SHIP = 1500;
+// "Nombre|precio ½ kg|precio 1 kg"  (en Salsas: "Nombre|precio por unidad")
+const CATALOG = {
+  'Res': `Adobada|2800|5550
+Arrachera|5100|10200
+Asado de tira|3650|7300
+Bistec de bolita|3300|6600
+Bistec de cola de lomo|3350|6700
+Bistec de lomito|8250|16450
+Bistec de lomo|4150|8250
+Bistec de lomo paleta|3250|6450
+Bistec de lomo rayado|4100|8150
+Bistec de posta de cuarto|3700|7350
+Bistec de punta de solomo|4450|8900
+Bistec de solomo|3550|7050
+Bistec de vuelta de lomo|3350|6700
+Bistec económico|3000|5950
+Bistec primera|3200|6350
+Cachete|4400|8800
+Cacho de paleta|3500|6950
+Carpaccio de res|1900|3800
+Cecina|3100|6150
+Cola de lomo|4000|7950
+Cola de lomo aged|5150|10250
+Colita de cuadril|5150|10300
+Costilla de primera|2150|4250
+Costilla super|2750|5500
+Delmonico|4450|8900
+Delmonico aged|5450|10850
+Fajitas|2950|5900
+Flat iron|5300|10600
+Hueso carnudo|1600|3200
+Hueso de pescuezo|2450|4850
+Hueso popular|400|800
+Hígado|1500|2950
+Jarrete|650|1300
+Lengua|4200|8450
+Lomito|6000|12000|Pieza entera de 1–1,5 kg, se cobra por peso real
+Lomito aged|7550|15100
+Lomo ancho|4400|8800
+Lomo ancho aged|5450|10850
+Lomo de churrasco|4700|9350
+Lomo de entraña|5150|10250
+Lomo de paleta|3550|7050
+Lomo entero|4100|8150|Solo pieza entera de 5–6 kg
+Lomo rayado|3950|7850
+Mano de piedra|2900|5800
+Molida de primera|2300|4550|90/10
+Molida económica|1900|3800
+Molida premium|2800|5550|95/5
+Mondongo|1550|3050
+Mondongo de pretina|1850|3700
+NY steak|4850|9700
+Osobuco|2450|4850
+Pecho|2900|5800
+Posta de bolita|3250|6450
+Posta de cuarto|2750|5500
+Posta de paleta|2950|5850
+Punta de solomo|6400|12750
+Quititeña|3400|6800
+Rabo|3250|6450
+Ratón|3200|6400
+Rib eye|5100|10200
+Sirloin|5000|10000
+Solomo|2750|5450
+T-Bone|5400|10800
+Tomahawk steak|5800|11600
+Tortas económicas 100 g|1500|2950
+Tortas premium 100 g|3000|6000
+Tortas premium 200 g|3250|6500
+Tortas premium ¼ lb|3000|5950
+Tortas premium ½ lb|3000|6000
+Trocitos de primera|2750|5500
+Trocitos especiales|2850|5650
+Tuétano|1000|2000
+Vuelta de lomo|3300|6600`,
+  'Res importado': `Bistec de bolita|3300|6600
+Bistec de cola de lomo|3350|6700
+Bistec de lomito|8250|16450
+Bistec de lomo paleta|3250|6450
+Bistec de punta de solomo|4450|8900
+Bistec de vuelta de lomo|3350|6700
+Bistec económico|3000|5950
+Bistec primera|3050|6100
+Carpaccio de res|1900|3800
+Cecina|3100|6150
+Costilla super|2750|5500
+Fajitas|3150|6250
+Flat iron|5300|10600
+Hígado|1200|2350
+Lengua|4050|8050
+Lomito|6850|13650
+Lomo ancho|3500|6950
+Lomo de churrasco|4700|9350
+Mano de piedra|2650|5250
+Molida de primera|2700|5400
+Molida económica|2000|4000
+Molida premium|3050|6050
+Mondongo|1550|3050
+NY steak|4700|9350
+Pecho|2750|5500
+Posta de bolita|3000|6000
+Posta de cuarto|2950|5850
+Posta de paleta|2900|5800
+Punta de solomo|4400|8800
+Quititeña|3150|6250
+Solomo|2750|5500
+Trocitos de primera|3150|6250
+Trocitos especiales|3200|6350`,
+  'Cerdo': `Adobada|1550|3100
+Baby ribs|2700|5400
+Bistec|1600|3200
+Boronas de chicharrón|2300|4600
+Cabeza deshuesada|900|1750
+Cabeza entera|1000|2000
+Canal de cerdo|1000|2000
+Chicharrones|3950|7850
+Chuleta|1550|3100
+Chuleta con tocino|1350|2700
+Chuleta mariposa|1500|2950
+Chuleta quititeña|1600|3200
+Costilla|1700|3400
+Costilla adobada flauta|3650|7300
+Costilla con tocino|1600|3200
+Costilla St. Louis|3000|6000
+Fajitas|1500|2950
+Falda de cerdo|1600|3150
+Grasa de cerdo|800|1550
+Hueso|500|950
+Lomito|2450|4900|Piezas de unos 400 g
+Lomo|2000|4000
+Molida|1600|3200
+Panzada especial|1650|3300
+Pezuña|850|1700
+Posta de cuarto|1350|2650
+Posta de paleta|1300|2550
+Posta entera|2100|4150
+Quititeña de cerdo|1400|2800
+Rack de chuleta mariposa|1000|2000
+Tocino|500|950
+Tocino de panzada|1450|2900
+Tocino de papada|1100|2150
+Tomahawk de cerdo|3150|6300
+Trocitos|1750|3500`,
+  'Pollo': `Adobada|2300|4600
+Alas|1350|2650
+Carcasa|450|850
+Dedos de pollo|2700|5400
+Entero limpio|1650|3300
+Fajitas|2350|4650
+Filete de pechuga|2350|4700
+Gallina entera|1350|2650
+Menudos|600|1150
+Molida de pollo|2150|4300
+Mollejas|1350|2700
+Muslito de muslo|1750|3450
+Muslito importado|900|1750
+Muslo deshuesado|1750|3450
+Muslo deshuesado sin piel importado|1450|2900
+Muslo entero|1200|2350
+Muslo importado|900|1750
+Pechuga importada|1600|3150
+Tortas de pollo|1150|2300
+Trocitos|1000|2000
+Trocitos de pechuga importada|1400|2750`,
+  'Embutidos': `Chorizo|1100|2150
+Chorizo artesanal|3250|6450
+Chorizo caribeño|1400|2750
+Chorizo económico|950|1900
+Chorizo especial|1650|3300|El chorizo parrillero
+Chorizo picante|1400|2750
+Chuleta ahumada|2350|4650
+Costilla ahumada|3450|6900
+Jamón de pierna|3600|7200
+Mix para cantones|1350|2650
+Mortadela|1200|2350
+Salchichón|1900|3750
+Salchichón Don Sayin|1350|2650
+Salchichón Don Sayin con chile|1350|2700
+Salchichón con chile|1900|3750
+Salchichón parrillero|1800|3600
+Tocineta ahumada|4150|8300
+Trozos ahumados|1850|3650
+Carne para pizza La Joya|2050|4050
+Jamón Virginia La Joya|3350|6700
+Mortadela Bologna La Joya|1350|2650
+Mortadela con chile La Joya|1400|2750
+Mortadela criolla La Joya|1600|3200
+Mortadela cuadrada La Joya|2000|3950
+Peperoni La Joya|3300|6600
+Salami La Joya|3050|6050
+Salchicha 13 cm La Joya|1850|3700
+Salchicha desayuno La Joya|2500|4950
+Salchichón parrillero La Joya|1550|3100
+Tocineta ahumada La Joya|5350|10700
+Tocineta formada La Joya|3000|6000`,
+  'Mariscos': `Camarón 51-60 (cultivo)|5500|10950
+Camarón pink|5600|11200
+Mariscada|4100|8200
+Salmón porciones 200 g|6150|12250
+Tilapia congelada|1200|2350`,
+  'Papas': `Hash brown|1700|3350
+Papa gajo Cavendish|1550|3100
+Papas fritas congeladas|700|1350`,
+  'Salsas y bebidas': `Crema Toscanela (refresco)|3550
+Dulce de leche|3200
+Horchata Toscanela|3300
+Kétchup Del Llano, 500 sobres|5800
+Mayonesa Del Llano, 350 sobres|6400
+Mayonesa Del Llano, galón|7850
+Mayonesa Norteña|6100
+Mostaza miel Del Llano|8100
+Salsa BBQ Del Llano|7950
+Salsa china Del Llano|4800
+Salsa con tomate Norteña|2900
+Salsa inglesa Norteña|3300
+Salsa pizza Del Llano|6700
+Té frío limón Toscanela|2800
+Té frío melocotón Toscanela|2750`
+};
+const COMBO = { key: 'combo|Combo desayuno', name: 'Combo desayuno', size: 'combo', price: 11200 };
+// ===========================
+
+const fmt = n => '₡' + Math.round(n).toLocaleString('en-US').replace(/,/g, '.');
+const waLink = t => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+
+// Parse catalog
+const items = [];
+Object.entries(CATALOG).forEach(([cat, txt]) => {
+  txt.trim().split('\n').forEach(line => {
+    const p = line.split('|');
+    const unit = cat === 'Salsas y bebidas';
+    items.push(unit
+      ? { cat, name: p[0], opts: [{ size: 'unidad', label: 'Unidad', price: +p[1] }] }
+      : { cat, name: p[0], note: p[3] || '', opts: [{ size: '½ kg', label: '½ kg', price: +p[1] }, { size: '1 kg', label: '1 kg', price: +p[2] }] });
+  });
+});
+
+// Cart
+let cart = {};
+try { cart = JSON.parse(localStorage.getItem('lahielera-cart') || '{}'); } catch (e) { cart = {}; }
+const save = () => { try { localStorage.setItem('lahielera-cart', JSON.stringify(cart)); } catch (e) {} };
+const keyOf = (it, o) => `${it.cat}|${it.name}|${o.size}`;
+const setQty = (key, info, q) => {
+  if (q <= 0) delete cart[key]; else cart[key] = { ...info, qty: q };
+  save(); refresh();
+};
+
+// Render tabs + catalog
+const cats = ['Todo', ...Object.keys(CATALOG)];
+let activeCat = 'Todo', query = '';
+const tabsEl = document.getElementById('tabs');
+tabsEl.innerHTML = cats.map(c => `<button class="tab" aria-pressed="${c === 'Todo'}" data-c="${c}">${c}</button>`).join('');
+tabsEl.onclick = e => {
+  const b = e.target.closest('.tab'); if (!b) return;
+  activeCat = b.dataset.c;
+  tabsEl.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-pressed', x === b));
+  renderCatalog();
+};
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+document.getElementById('search').oninput = e => { query = norm(e.target.value.trim()); renderCatalog(); };
+
+const catalogEl = document.getElementById('catalog');
+function renderCatalog() {
+  const shown = items.filter(it => (activeCat === 'Todo' || it.cat === activeCat) && (!query || norm(it.name).includes(query)));
+  if (!shown.length) { catalogEl.innerHTML = '<p class="empty">No encontramos ese producto. Escribinos y te ayudamos.</p>'; return; }
+  let html = '', last = '';
+  shown.forEach((it, i) => {
+    if (it.cat !== last) { if (last) html += '</div>'; html += `<h3 class="cat-h">${it.cat}</h3><div class="list">`; last = it.cat; }
+    html += `<div class="item"><div><div class="item-name">${it.name}</div>${it.note ? `<div class="item-note">${it.note}</div>` : ''}</div><div class="opts">` +
+      it.opts.map(o => {
+        const k = keyOf(it, o);
+        return `<div class="opt"><div class="opt-l">${o.label}<b>${fmt(o.price)}</b></div><div class="qty" data-k="${k}" data-i="${items.indexOf(it)}" data-s="${o.size}">
+          <button class="minus" aria-label="Quitar ${o.label} de ${it.name}">−</button><output>${cart[k]?.qty || 0}</output><button class="plus" aria-label="Agregar ${o.label} de ${it.name}">+</button></div></div>`;
+      }).join('') + '</div></div>';
+  });
+  catalogEl.innerHTML = html + '</div>';
+}
+catalogEl.onclick = e => {
+  const btn = e.target.closest('button'); if (!btn) return;
+  const q = btn.closest('.qty'); const it = items[+q.dataset.i]; const o = it.opts.find(x => x.size === q.dataset.s);
+  const k = q.dataset.k; const cur = cart[k]?.qty || 0;
+  setQty(k, { name: it.name, cat: it.cat, size: o.size, price: o.price }, cur + (btn.classList.contains('plus') ? 1 : -1));
+};
+
+document.getElementById('addCombo').onclick = () => {
+  setQty(COMBO.key, { name: COMBO.name, cat: '', size: 'combo', price: COMBO.price }, (cart[COMBO.key]?.qty || 0) + 1);
+  openDrawer();
+};
+
+// Cart UI
+const drawer = document.getElementById('drawer');
+const openDrawer = () => { drawer.hidden = false; };
+document.getElementById('openCart').onclick = openDrawer;
+document.getElementById('closeCart').onclick = () => drawer.hidden = true;
+drawer.onclick = e => { if (e.target === drawer) drawer.hidden = true; };
+document.addEventListener('keydown', e => { if (e.key === 'Escape') drawer.hidden = true; });
+
+const label = c => c.size === 'combo' ? c.name : /Salsas/.test(c.cat) ? c.name : `${c.name} (${c.cat.toLowerCase()}) — ${c.size}`;
+
+function refresh() {
+  const entries = Object.entries(cart);
+  const sub = entries.reduce((s, [, c]) => s + c.price * c.qty, 0);
+  const count = entries.reduce((s, [, c]) => s + c.qty, 0);
+  document.getElementById('cartbar').hidden = !count;
+  if (!count) drawer.hidden = true;
+  document.getElementById('cartTotal').textContent = fmt(sub);
+  document.getElementById('cartCount').textContent = `${count} producto${count === 1 ? '' : 's'} · Ver y enviar`;
+  document.getElementById('lines').innerHTML = entries.map(([k, c]) =>
+    `<div class="line"><span>${c.qty} × ${label(c)}<br><button class="rm" data-k="${k}">Quitar</button></span><b>${fmt(c.price * c.qty)}</b></div>`).join('');
+  document.getElementById('subtotal').textContent = fmt(sub);
+  const zone = document.getElementById('cZone').value;
+  let ship = '';
+  if (zone === 'Escazú') ship = sub >= FREE_SHIP ? 'Envío gratis en Escazú.' : `Envío en Escazú: ${fmt(SHIP)}. Te faltan ${fmt(FREE_SHIP - sub)} para envío gratis.`;
+  else ship = 'El envío a tu zona te lo confirmamos por WhatsApp.';
+  document.getElementById('shipNote').textContent = ship;
+  const name = document.getElementById('cName').value.trim();
+  const msg = `Hola La Hielera 🥩 Quiero hacer este pedido:\n\n${entries.map(([, c]) => `• ${c.qty} × ${label(c)} — ${fmt(c.price * c.qty)}`).join('\n')}\n\nSubtotal: ${fmt(sub)}\n${ship}\n\nNombre: ${name}\nZona: ${zone}`;
+  document.getElementById('sendOrder').href = waLink(msg);
+  document.querySelectorAll('.qty').forEach(q => { q.querySelector('output').textContent = cart[q.dataset.k]?.qty || 0; });
+}
+document.getElementById('lines').onclick = e => { const b = e.target.closest('.rm'); if (b) { delete cart[b.dataset.k]; save(); refresh(); } };
+document.getElementById('cName').oninput = refresh;
+document.getElementById('cZone').onchange = refresh;
+
+document.querySelectorAll('.wa-general').forEach(a => a.href = waLink('Hola La Hielera 🥩 Quiero hacer un pedido / tengo una consulta.'));
+document.getElementById('yr').textContent = new Date().getFullYear();
+renderCatalog(); refresh();
+</script>
+</body>
+</html>
